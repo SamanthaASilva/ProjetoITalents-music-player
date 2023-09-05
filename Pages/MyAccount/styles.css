@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=ADLaM+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=ADLaM+Display&family=Zeyada&display=swap');
+
+:root{
+    --color-default: rgb(255, 255, 255);
+    --theme-color: rgb(253,40,141);
+    --color-text: rgb(255,209,117);
+}
+
+.form-account{
+    margin: 5% auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 24rem;
+    height: 20rem;
+    color: var(--color-default);
+    background-color: var(--theme-color);
+    border-radius: 5px;
+}
+
+fieldset{
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+    margin: 20px auto 12px auto;
+    border: 0;
+}
+
+legend{
+    font-weight: bold;
+    margin: 10px auto;
+}
+
+.input{
+    margin: 6px auto;
+}
+
+.button-save{
+    width: 4rem;
+    height: 25px;
+    margin: 15px auto;
+    color: var(--color-default);
+    font-weight: bold;
+}
+
+.button-save:hover{
+    color: var(--theme-color);
+    cursor: pointer;
+    border-radius: .5rem;
+    background-color: var(--color-default);
+}
+
+label{
+    margin-top: 14px;
+    color: var(--color-default);
+}

@@ -1,0 +1,43 @@
+:root{
+    --color-default: rgb(255, 255, 255);
+    --theme-color: rgb(253,40,141);
+    --color-text: rgb(255,209,117);
+}
+
+.section{
+    display: flex;
+    align-items: center;
+    padding: 0 44px;
+    height: 50px;
+    background-image: linear-gradient(90deg, rgba(255,22,174,1) 0%, rgba(255,87,149,1) 49%, rgba(254,159,97,1) 88%);
+}
+
+.ul-topic{
+    display: flex;
+    list-style: none;
+}
+
+#icon-topic{
+    font-size: 25px;
+}
+
+#favorites, #hits, #account, #playlists{
+    margin: auto 15px;
+    color: var(--color-default);
+}
+
+.div-section{
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+}
+
+.ul-create-playlist{
+    display: flex;
+    list-style: none;
+}
+
+#create-new-playlist{
+    margin: auto 15px;
+    color: var(--color-default);
+}

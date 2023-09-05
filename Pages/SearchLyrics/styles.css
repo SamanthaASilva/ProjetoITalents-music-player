@@ -1,0 +1,87 @@
+:root{
+    --color-default: rgb(255, 255, 255);
+    --theme-color: rgb(253,40,141);
+    --color-text: rgb(255,209,117);
+}
+
+.div-music .ul-music{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    width: 75%;
+    height: 3rem;
+    margin: 8px auto;
+    border-radius: 15px;
+    font-weight: bold;
+    background-image: linear-gradient(90deg, rgba(255,22,174,1) 0%, rgba(255,87,149,1) 49%, rgba(254,159,97,1) 88%);
+}
+
+#icon-topic-search{
+    font-size: 30px;
+}
+
+#search-lyrics{
+    width: 20rem;
+    height: 30px;
+    padding-left: 25px;
+    text-align: center;
+    color: var(--theme-color);
+}
+
+.lyrics-artist-name{
+    color: var(--color-text);
+}
+
+.lyrics-music-name{
+    color: var(--color-default);
+}
+
+.button-see-lyrics {
+    width: 5rem;
+    height: 25px;
+    background-color: var(--theme-color);
+    color: var(--color-default);
+    border-radius: .5rem;
+    border: 0;
+}
+
+.button-see-lyrics:hover {
+    color: var(--theme-color);
+    cursor: pointer;
+    border: 2px solid var(--color-default);
+    border-radius: .5rem;
+    background-color: var(--color-default);
+}
+
+.class-see-lyrics{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 1rem auto;
+    padding: 0 20rem;
+    color: var(--color-default);
+    text-align:center;
+}
+
+#artist-lyrics{
+    color: var(--color-text);
+}
+
+@media screen and (max-width: 950px) {
+    .class-see-lyrics{
+        padding: 0 10rem;
+    }
+}
+
+@media screen and (max-width: 565px) {
+    .class-see-lyrics{
+        padding: 0 5rem;
+    }
+}
+
+@media screen and (max-width: 385px) {
+    .lyrics-music-name{
+        display: none;
+    }
+}

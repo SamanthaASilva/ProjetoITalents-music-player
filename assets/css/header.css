@@ -1,0 +1,261 @@
+:root{
+    --color-default: rgb(255, 255, 255);
+    --theme-color: rgb(253,40,141);
+    --color-text: rgb(255,209,117);
+}
+
+*{
+    padding: 0;
+    margin:0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+header{
+    background-color: var(--theme-color);
+    color: var(--color-default);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+li{
+    list-style: none;
+}
+
+.nav-bar{
+    min-height: 60px;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 44px;
+}
+
+.ul-menu{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10rem;
+}
+
+.ul-input{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.div-menu{
+    display: none;
+}
+
+.bi-list{
+    font-size: 30px;
+}
+
+.bi-list:hover{
+    color: var(--theme-color);
+    cursor: pointer;
+    border: 2px solid var(--color-default);
+    border-radius: .5rem;
+    background-color: var(--color-default);
+}
+
+.bi-search{
+    color: var(--theme-color);
+}
+
+button{
+    background-color: var(--theme-color);
+    border: 0;
+}
+
+#button-search{
+    font-size: 20px;
+    border-radius: 5px 5px 5px 5px;
+    margin-left: -22px;
+    background-color: var(--color-default);
+}
+
+#logout{
+    display: flex;
+    background-color: transparent;
+    font-size: 14px;
+    align-items: center;
+    justify-content: center;
+    color: var(--color-default);
+    margin-left: -56px;
+}
+
+#logout:hover{
+    color: var(--theme-color);
+    cursor: pointer;
+    border: 2px solid var(--color-default);
+    border-radius: .5rem;
+    background-color: var(--color-default);
+}
+
+input{
+    height: 30px;
+    border-radius: 5px;
+    padding-left: 10px;
+    width: 15rem;
+    border: 0;
+}
+
+input:focus{
+    outline: 0;
+}
+
+.bi-box-arrow-right{
+    font-size: 24px;
+}
+
+.bi-box-arrow-right:hover{
+    color: var(--theme-color);
+    cursor: pointer;
+    border: 2px solid var(--color-default);
+    border-radius: .5rem;
+    background-color: var(--color-default);
+}
+
+i, #login, #register{
+    color: var(--color-default);
+}
+
+#login{
+    font-weight: bold;
+    width: 4rem;
+    height: 25px;
+}
+
+#register{
+    font-weight: bold;
+    width: 5rem;
+    height: 25px;
+}
+
+#login:hover{
+    color: var(--theme-color);
+    cursor: pointer;
+    border: 2px solid var(--color-default);
+    border-radius: .5rem;
+    background-color: var(--color-default);
+}
+
+#register:hover{
+    color: var(--theme-color);
+    cursor: pointer;
+    border: 2px solid var(--color-default);
+    border-radius: .5rem;
+    background-color: var(--color-default);
+}
+
+@media screen and (max-width: 1094px){
+    .nav-bar{
+        padding: 0 15px;
+        justify-content: space-between;
+    }
+    .ul-menu{
+        gap: 3rem;
+    }
+    .bi-list{
+        font-size: 24px;
+    }
+    .span{
+        margin: auto 10px;
+    }
+    #logout{
+        margin-left: -10px;
+    }
+
+}
+
+@media screen and (max-width: 680px){
+    .nav-bar{
+        padding: 0 15px;
+    }
+    .ul-menu{
+        gap: 5px;
+    }
+    .bi-list{
+        font-size: 24px;
+    }
+    #welcome, #logout{
+        display: none;
+    }
+    .div-menu{
+        display: block;
+        margin: auto 30px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .span{
+        margin: auto 10px;
+    }
+
+}
+
+@media screen and (max-width: 580px){
+    .bi-list{
+        font-size: 24px;
+    }
+    input{
+        width: 10rem;
+    }
+    #welcome, #logout{
+        display: none;
+    }
+    .div-menu{
+        display: block;
+        margin: auto 35px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+}
+
+@media screen and (max-width: 490px){
+    .bi-list{
+        font-size: 14px;
+    }
+    input{
+        width: 10rem;
+    }
+    #welcome, #logout, .span{
+        display: none;
+    }
+    .div-menu{
+        display: block;
+        margin: auto 35px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .bi-box-arrow-right{
+        font-size: 14px;
+    }
+
+}
+
+@media screen and (max-width: 375px){
+    .bi-list{
+        font-size: 14px;
+    }
+    input{
+        width: 8rem;
+    }
+    #welcome, #logout, .span{
+        display: none;
+    }
+    .div-menu{
+        display: block;
+        margin: auto 35px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .bi-box-arrow-right{
+        font-size: 14px;
+    }
+}

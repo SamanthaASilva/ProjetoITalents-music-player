@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=ADLaM+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=ADLaM+Display&family=Zeyada&display=swap');
+
+* {
+    font-family: 'ADLaM Display', Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    
+}
+
+:root{
+    --color-default: rgb(255, 255, 255);
+    --theme-color: rgb(253,40,141);
+    --color-text: rgb(255,209,117);
+}
+
+body, main, footer{
+    background-image: linear-gradient(90deg, rgba(255,106,193,1) 26%, rgba(255,159,146,1) 57%, rgba(255,220,92,1) 100%);
+    background-attachment: fixed;
+}
+
+main{
+    min-height: 550px;
+}
+
+.span{
+    font-family: 'Zeyada', 'cursive';
+    font-size: 40px;
+}
+
+#next-page{
+    display: flex;
+    align-items: end;
+    justify-content: end;
+    margin: 30px 120px 30px;
+    font-size: 20px;
+    color: var(--color-default);
+}
+
