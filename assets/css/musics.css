@@ -1,0 +1,218 @@
+:root{
+    --color-default: rgb(255, 255, 255);
+    --theme-color: rgb(253,40,141);
+    --color-text: rgb(255,209,117);
+}
+
+.div-music .ul-music{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    width: 75%;
+    height: 3rem;
+    margin: 8px auto;
+    border-radius: 15px;
+    font-weight: bold;
+    background-image: linear-gradient(90deg, rgba(255,22,174,1) 0%, rgba(255,87,149,1) 49%, rgba(254,159,97,1) 88%);
+}
+
+.music-name{
+    color: var(--color-text);
+}
+
+i, .music-artist-name{
+    color: var(--color-default);
+}
+
+#icon-favorite-music{
+    font-size: 25px;
+    color: var(--color-default); 
+}
+
+#icon-favorite-music:hover{
+    cursor: pointer;
+    font-size: 35px;
+    color: var(--theme-color);
+}
+
+.bi-caret-right-fill{
+    font-size: 35px;
+    color: var(--color-default);
+}
+
+.bi-play-circle, .music-menu{
+    font-size: 28px;
+}
+
+.bi-play-circle:hover{
+    cursor: pointer;
+}
+
+.bi-caret-right-fill:hover{
+    color: var(--theme-color);
+    font-size: 40px;
+}
+
+.div-modal-addPlaylist{
+    display: none;
+    position: absolute; 
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, -50%); 
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 20rem;
+    height: 12rem;
+    color: var(--color-default);
+    background-color: var(--theme-color);
+    border-radius: 5px;
+    z-index: 9;
+}
+
+.modal-title {
+    padding-top: 15px;
+    text-align: center;
+    color: var(--color-default);
+}
+
+.modal-input {
+    width: 12rem;
+    height: 20px;
+    margin: 25px;
+    text-align: center;
+    color: var(--theme-color);
+}
+
+.button-add {
+    margin-bottom: 10px;
+    background-color: var(--theme-color);
+    color: white;
+    border: 0;
+    width: 5rem;
+    height: 25px;
+}
+
+.button-add:hover {
+    color: var(--theme-color);
+    cursor: pointer;
+    border: 2px solid var(--color-default);
+    border-radius: .5rem;
+    background-color: var(--color-default);
+}
+
+.button-cancel {
+    margin-bottom: 15px;
+    background-color: var(--theme-color);
+    color: white;
+    border: 0;
+    width: 5rem;
+    height: 25px;
+}
+
+.button-cancel:hover {
+    color: var(--theme-color);
+    cursor: pointer;
+    border: 2px solid var(--color-default);
+    border-radius: .5rem;
+    background-color: var(--color-default);
+}
+
+.div-option {
+    display: none;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: absolute; 
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, -50%); 
+    width: 10rem;
+    height: 5rem;
+    background-color: var(--theme-color);
+    border-radius: .5rem;
+    z-index: 9;
+}
+
+.option-music{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background-color: var(--theme-color);
+    color: var(--color-default);
+    border: 0;
+}
+
+.option-music:hover{
+    color: var(--theme-color);
+    cursor: pointer;
+    border: 2px solid var(--color-default);
+    border-radius: .5rem;
+    background-color: var(--color-default);
+}
+
+.button-confirm {
+    margin-top: 40px;
+    background-color: var(--theme-color);
+    color: white;
+    border: 0;
+    width: 5rem;
+    height: 25px;
+}
+
+.button-confirm:hover {
+    color: var(--theme-color);
+    cursor: pointer;
+    border: 2px solid var(--color-default);
+    border-radius: .5rem;
+    background-color: var(--color-default);
+}
+
+.bi-pause-circle{
+    font-size: 28px;
+    color: var(--color-default);
+}
+
+.bi-pause-circle:hover{
+    color: var(--color-default);
+    cursor: pointer;
+    border-radius: .5rem;
+}
+
+.music-menu{
+    display: flex;
+    justify-content: end;
+    align-items: end;
+    font-size: 30px;
+    color: gray;
+}
+
+.music-menu:hover{
+    cursor: pointer;
+    font-size: 35px;
+}
+
+.bi-x-circle-fill{
+    color: var(--color-default);
+    position: absolute; 
+    top: 10%; 
+    left: 90%; 
+    transform: translate(-50%, -50%); 
+    font-size: 15px;
+}
+
+.bi-x-circle-fill:hover{
+    color: var(--color-text);
+    cursor: pointer;
+    border-radius: .5rem;
+    background-color: var(--theme-color);
+}
+
+@media screen and (max-width: 385px) {
+    .music-artist-name{
+        display: none;
+    }
+    .music-name{
+        margin-left: 10px;
+    }
+}

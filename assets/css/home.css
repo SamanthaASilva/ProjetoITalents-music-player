@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=ADLaM+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=ADLaM+Display&family=Zeyada&display=swap');
+
+:root{
+    --color-default: rgb(255, 255, 255);
+    --theme-color: rgb(253,40,141);
+    --color-text: rgb(255,209,117);
+}
+
+h2{
+    color: var(--color-default);
+    text-shadow: 0rem -0.3em 0em var(--theme-color), 0em -0.5em 0em var(--color-text);
+    margin-left: 130px;
+    font-size: 70px;
+    position: absolute;
+    margin-top: 4rem;
+    letter-spacing: 2px;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+#image-bottom{
+    width: 100%;
+    height: 550px;
+    margin-top: 0;
+    position: absolute;
+}

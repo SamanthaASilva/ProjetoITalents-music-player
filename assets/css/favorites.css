@@ -1,0 +1,82 @@
+:root{
+    --color-default: rgb(255, 255, 255);
+    --theme-color: rgb(253,40,141);
+    --color-text: rgb(255,209,117);
+}
+
+.div-music .ul-music{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    width: 75%;
+    height: 3rem;
+    margin: 8px auto;
+    border-radius: 15px;
+    font-weight: bold;
+    background-image: linear-gradient(90deg, rgba(255,22,174,1) 0%, rgba(255,87,149,1) 49%, rgba(254,159,97,1) 88%);
+}
+
+.music-name{
+    position: absolute;
+    margin-left: 5rem;
+    color: var(--color-text);
+}
+
+#icon-favorite-music .bi-heart-fill{
+    color: var(--theme-color);
+    font-size: 25px;
+}
+
+#icon-favorite-music .bi-heart-fill:hover{
+    cursor: pointer;
+    font-size: 30px;
+    color: var(--color-default);
+} 
+
+.music-artist-name{
+    color: var(--color-default);
+} 
+
+
+.bi-caret-right-fill{
+    font-size: 35px;
+    color: var(--color-default);
+}
+
+.bi-caret-right-fill:hover{
+    cursor: pointer;
+    color: var(--theme-color);
+    font-size: 40px;
+}
+
+.bi-pause{
+    font-size: 40px;
+    color: var(--color-default);
+}
+
+.bi-pause:hover{
+    color: var(--theme-color);
+    cursor: pointer;
+    border-radius: .5rem;
+
+}
+
+@media screen and (max-width: 580px) {
+    .div-music .ul-music{
+        gap: 10px;
+    }
+    .music-artist-name{
+        position: absolute;
+        margin: 10rem;
+    }
+}
+
+@media screen and (max-width: 385px) {
+    .music-artist-name{
+        display: none;
+    }
+    .music-name{
+        margin-left: 2rem;
+    }
+}

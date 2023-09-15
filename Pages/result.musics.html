@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="initial-scale=1,maximum-scale=1,minimum-scale=1">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="../../assets/css/styles.css">
+    <link rel="stylesheet" href="../../assets/css/header.css">
+    <link rel="stylesheet" href="../../assets/css/section.css">
+    <link rel="stylesheet" href="../assets/css/musics.css">
+    <link rel="stylesheet" href="../../assets/css/footer.css">
+    <link rel="stylesheet" href="../assets/css/menu.css">
+    <title>Resultado Músicas</title>
+</head>
+
+<body>
+
+    <header>
+        <nav class="nav-bar">
+            <ul class="ul-menu">
+                <li><button><i class="bi bi-list"></i></button></li>
+                <li><span class="span">+Música</span></li>
+                <li><input id="searchMusic" type="search" placeholder="O que você quer ouvir agora?"><button id="button-search"><i class="bi bi-search"></i></button></li>
+                <li id="welcome">Olá, Fulano <i class="bi bi-person-fill"></i></li>
+                <li ><button id="logout">Sair <i class="bi bi-box-arrow-right"></i></button></li>
+            </ul>
+            <div class="div-menu">
+                <span class="menu-bar"><i class="bi bi-box-arrow-right"></i></span>
+            </div>
+        </nav>
+    </header>
+    <section class="menu">
+        <div class="div-menu-options">
+            <div class="div-topic">
+                <i id="icon-div" class="bi bi-play-circle"></i>
+                <a href="menu.html">Menu</a>
+            </div>
+            <div class="div-topic">
+                <i id="icon-div" class="bi bi-heart-fill"></i>
+                <a href="favorites.html">Favoritos</a>
+            </div class="div-column">
+            <div class="div-topic">
+                <i id="icon-div" class="bi bi-search-heart-fill"></i>
+                <a href="search-lyrics.html">Pesquisar Letras</a>
+            </div>
+            <div>
+            <div class="div-topic">
+                <i id="icon-div" class="bi bi-plus-circle-fill"></i>
+                <a href="most-played.html">Mais Tocadas</a>
+            </div>
+            <div class="div-topic">
+                <i id="icon-div" class="bi bi-music-note-beamed"></i>
+                <a href="hits.html">Hits do Momento</a>
+            </div>
+            <div class="div-topic">
+                <i id="icon-div" class="bi bi-person-circle"></i>
+                <a href="my-account.html">Minha Conta</a>
+            </div>
+        </div>
+    </div>
+    </section>
+    <main>
+        <div class="div-option">
+            <button id="lyrics" class="option-music"><a href="see-lyrics.html">Letra</a></button>
+        </div>
+        <div class="div-music">
+            <ul class="ul-music">
+                <li><i class="bi bi-play-circle" onclick="playMusic(1, '11')"></i> </li>
+                <li class="music-name">Música A</li>
+                <li class="music-artist-name">Artista X</li>
+                <li id="icon-favorite-music"><i class="bi bi-heart-fill" onclick="addMusicPlaylist(1)"></i></li>
+                <li class="music-menu"><i class="bi bi-three-dots-vertical" onclick="openMenuMusics(0)"></i></li>
+            </ul>
+        </div>
+        <div class="div-music">
+            <ul class="ul-music">
+                <li><i class="bi bi-play-circle" onclick="playMusic(2, '14')"></i> </li>
+                <li class="music-name">Música A</li>
+                <li class="music-artist-name">Artista X</li>
+                <li id="icon-favorite-music"><i class="bi bi-heart-fill" onclick="addMusicPlaylist(2)"></i></li>
+                <li class="music-menu"><i class="bi bi-three-dots-vertical" onclick="openMenuMusics(1)"></i></li>
+            </ul>
+        </div>
+        <div class="div-music">
+            <ul class="ul-music">
+                <li><i class="bi bi-play-circle" onclick="playMusic(3, '17')"></i> </li>
+                <li class="music-name">Música A</li>
+                <li class="music-artist-name">Artista X</li>
+                <li id="icon-favorite-music"><i class="bi bi-heart-fill" onclick="addMusicPlaylist(3)"></i></li>
+                <li class="music-menu"><i class="bi bi-three-dots-vertical" onclick="openMenuMusics(2)"></i></li>
+            </ul>
+        </div>
+        <div class="div-music">
+            <ul class="ul-music">
+                <li><i class="bi bi-play-circle" onclick="playMusic(4, '20')"></i> </li>
+                <li class="music-name">Música A</li>
+                <li class="music-artist-name">Artista X</li>
+                <li id="icon-favorite-music"><i class="bi bi-heart-fill" onclick="addMusicPlaylist(4)"></i></li>
+                <li class="music-menu"><i class="bi bi-three-dots-vertical" onclick="openMenuMusics(3)"></i></li>
+            </ul>
+        </div>
+        <div class="div-music">
+            <ul class="ul-music">
+                <li><i class="bi bi-play-circle" onclick="playMusic(5, '23')"></i> </li>
+                <li class="music-name">Música A</li>
+                <li class="music-artist-name">Artista X</li>
+                <li id="icon-favorite-music"><i class="bi bi-heart-fill" onclick="addMusicPlaylist(5)"></i></li>
+                <li class="music-menu"><i class="bi bi-three-dots-vertical" onclick="openMenuMusics(4)"></i></li>
+            </ul>
+        </div>
+        <div class="div-music">
+            <ul class="ul-music">
+                <li><i class="bi bi-play-circle" onclick="playMusic(6, '26')"></i> </li>
+                <li class="music-name">Música A</li>
+                <li class="music-artist-name">Artista X</li>
+                <li id="icon-favorite-music"><i class="bi bi-heart-fill" onclick="addMusicPlaylist(6)"></i></li>
+                <li class="music-menu"><i class="bi bi-three-dots-vertical" onclick="openMenuMusics(5)"></i></li>
+            </ul>
+        </div>
+        <div class="div-music">
+            <ul class="ul-music">
+                <li><i class="bi bi-play-circle" onclick="playMusic(7, '29')"></i> </li>
+                <li class="music-name">Música A</li>
+                <li class="music-artist-name">Artista X</li>
+                <li id="icon-favorite-music"><i class="bi bi-heart-fill" onclick="addMusicPlaylist(7)"></i></li>
+                <li class="music-menu"><i class="bi bi-three-dots-vertical" onclick="openMenuMusics(6)"></i></li>
+            </ul>
+        </div>
+        <br>
+        <span id="next-page">1 2 3.. Next</span>
+    </main>
+
+    <footer>
+        <ul>
+            <li class="footer-title">Siga-nos nas Redes Sociais</li>
+            <li class="social-network"><i class="bi bi-instagram"></i> @maismusica</li>
+            <li class="social-network"><i class="bi bi-facebook"></i> mais musica oficial</li>
+            <li class="social-network"><i class="bi bi-tiktok"></i> +Musica</li>
+            <li class="social-network"><i class="bi bi-envelope"></i> mais@musica.com</li>
+        </ul>
+        <figure>
+            <img src="../../assets/img/fone-rodape.png" alt="fone de ouvido">
+            <caption>fones</caption>
+        </figure>
+    </footer>
+<script src="../assets/js/menu.js"></script>
+<script src="../assets/js/musics.js"></script>
+<script src="../assets/js/playMusic.js"></script>
+</body>
+</html>
