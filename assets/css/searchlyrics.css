@@ -64,6 +64,10 @@
     text-align:center;
 }
 
+.bi-search:hover {
+    cursor: pointer;
+}
+
 #artist-lyrics{
     color: var(--color-text);
 }
